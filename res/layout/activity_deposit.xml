@@ -1,0 +1,97 @@
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" >
+    
+    <ImageView
+        android:id="@+id/bg_image"  
+        android:layout_width="fill_parent"   
+        android:layout_height="fill_parent"  
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="false"
+        android:gravity="clip_horizontal"	
+        android:src="@drawable/bg2" />
+        
+    <ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+		android:background="@drawable/round_corner"
+		android:layout_marginTop="15dp"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginBottom="15dp">
+    	
+	<LinearLayout   
+		android:paddingTop="0dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingBottom="10dp"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    
+		<include 
+	   		layout="@layout/standard_title" />
+	    
+		<TextView   
+		    android:id="@+id/text_deposit_address"  
+		    android:layout_width="fill_parent"   
+		    android:layout_height="wrap_content"  
+		    android:layout_marginTop="5dp"
+		    android:textSize="18sp"
+		    android:textColor="#000000"
+		    android:text="Your deposit address:" />
+		    
+		<TextView   
+		    android:id="@+id/deposit_address"  
+		    android:layout_width="fill_parent"   
+		    android:layout_height="wrap_content"  
+		    android:layout_marginTop="5dp"
+		    android:layout_marginLeft="5dp"
+		    android:textSize="24sp"
+		    android:textColor="#000000"
+		    android:gravity="center"
+		    android:onClick="onDepositAddress"
+		    android:clickable="true"
+		    android:text="deposit_address" />
+		    
+		<TextView   
+		    android:id="@+id/copy_clipboard_hint"  
+		    android:layout_width="fill_parent"   
+		    android:layout_height="wrap_content"  
+		    android:layout_marginTop="0dp"
+		    android:layout_marginLeft="5dp"
+		    android:textSize="18sp"
+		    android:textColor="#bbbbbb"
+		    android:gravity="center"
+		    android:onClick="onDepositAddress"
+		    android:clickable="true"
+		    android:text="(Touch to copy to Clipboard)" />
+		    
+		<Button  
+		    android:id="@+id/external_app_button"  
+		    android:layout_height="wrap_content"  
+		    android:text="Tap here to use external app to deposit Bitcoins"  
+		    android:onClick="onExternalApp"  
+		    android:textSize="20sp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="15dp"
+		    android:layout_width="fill_parent" />
+		    
+		<TextView   
+		    android:id="@+id/external_app_suggestion"  
+		    android:layout_width="fill_parent"   
+		    android:layout_height="wrap_content"  
+		    android:layout_marginTop="5dp"
+		    android:layout_marginLeft="5dp"
+		    android:textSize="18sp"
+		    android:textColor="#000000"
+		    android:text="We recommend the BlockChain Android app to quickly send and receive Bitcoins." />
+    
+	</LinearLayout>
+	
+	</ScrollView>
+
+</FrameLayout>

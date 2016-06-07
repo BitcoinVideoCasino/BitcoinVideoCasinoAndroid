@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+ 
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	
+        <TextView   
+            android:id="@+id/balance"  
+            android:layout_width="0dp"   
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="Speed"/>
+             
+    <Spinner
+        android:id="@+id/speed_spinner"
+            android:layout_weight="1"
+        	android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/auto_speed_array" />
+        
+    </LinearLayout>
+        
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	
+        <TextView   
+            android:id="@+id/balance"  
+            android:layout_width="0dp"   
+            android:layout_height="wrap_content"  
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="Take insurance"/>
+                    
+    <Spinner
+        android:id="@+id/insurance_spinner"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/bj_insurance_array" />
+        
+    </LinearLayout>
+        
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_marginTop="10dp"
+    	android:orientation="horizontal" >
+ 
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+    	android:layout_marginRight="10dp"
+        android:text="Play" />
+        
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+    	android:layout_marginLeft="10dp"
+        android:text="Cancel" />
+        
+    </LinearLayout>
+ 
+</LinearLayout>

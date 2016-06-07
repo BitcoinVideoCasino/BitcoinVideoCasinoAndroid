@@ -1,0 +1,221 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/container"
+	android:background="@drawable/blackjack_background"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_height="fill_parent"
+    tools:context=".BlackjackActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/contents"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dealer_hands_holder"
+            android:layout_width="fill_parent"
+            android:layout_weight="290"
+            android:layout_height="0dp" >
+ 
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/player_zone"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="290"
+            android:layout_height="0dp" >
+ 
+
+            <FrameLayout
+                android:id="@+id/player_hands_holder"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            </FrameLayout>
+
+            <ImageButton  
+                android:id="@+id/insurance_button"  
+                android:layout_height="100dp"  
+                android:layout_width="200dp"  
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:onClick="onInsurance"  
+                android:scaleType="center"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:visibility="invisible"
+                android:src="@drawable/button_insurance" />
+
+            <ImageView
+                android:id="@+id/insurance_win"  
+                android:layout_height="100dp"  
+                android:layout_width="200dp"  
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="center"
+                android:adjustViewBounds="false"
+                android:visibility="invisible"
+                android:src="@drawable/insurance_win" />
+            <ImageView
+                android:id="@+id/insurance_lose"  
+                android:layout_height="100dp"  
+                android:layout_width="200dp"  
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="bottom|right"
+                android:gravity="bottom|right"
+                android:scaleType="center"
+                android:adjustViewBounds="false"
+                android:visibility="invisible"
+                android:src="@drawable/insurance_lose" />
+
+        </FrameLayout> 
+
+        <include 
+            android:id="@+id/win_bet_credits" 
+            layout="@layout/win_bet_credits" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_weight="80"
+            android:layout_height="0dp"
+            android:splitMotionEvents="false"
+            android:orientation="horizontal" >
+            
+            <ImageButton  
+                android:id="@+id/auto_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"  
+                android:layout_width="0dp"  
+                android:onClick="onAuto"  
+                android:scaleType="centerInside"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_auto" />
+                
+            <ImageButton  
+                android:id="@+id/double_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+                android:text="AUTO"  
+                android:onClick="onDouble"  
+                android:scaleType="centerInside"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_bjdouble" />
+                
+            <ImageButton  
+                android:id="@+id/split_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+                android:onClick="onSplit"  
+                android:scaleType="centerInside"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_split" />
+                
+            <ImageButton  
+                android:id="@+id/hit_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+                android:onClick="onHit"  
+                android:scaleType="centerInside"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_hit" />
+                
+            <ImageButton  
+                android:id="@+id/stand_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+                android:onClick="onStand"  
+                android:scaleType="centerInside"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_stand" />
+                
+            <ImageButton  
+                android:id="@+id/deal_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+                android:onClick="onDeal"  
+                android:scaleType="centerInside"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_draw" />
+            
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bet_container" 
+        android:layout_gravity="top|left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/bet_container" 
+            android:layout_gravity="top|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:id="@+id/foo1" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="BET" />
+
+            <EditText
+                android:id="@+id/bet_credits_input"  
+                android:layout_width="100dp"   
+                android:layout_height="wrap_content"  
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="1"
+                android:inputType="number"
+                android:cursorVisible="false" 
+                android:textColor="#000000" />
+
+        </LinearLayout>
+                
+        <TextView
+            android:id="@+id/credit_conversion_hint" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#cccccc"
+            android:textSize="14sp"
+            android:text="1 CREDIT = 0.0001 BTC" />
+
+        <TextView
+            android:id="@+id/max_bet_hint" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#cccccc"
+            android:textSize="14sp"
+            android:text="MAX BET 10,000 CREDITS" />
+
+    </LinearLayout>
+    
+</FrameLayout>

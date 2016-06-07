@@ -1,0 +1,7 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card0" 
+	android:src="@drawable/card_ah" 
+    android:tag="0"
+	android:layout_width="120px"
+	android:layout_height="150px" />
+

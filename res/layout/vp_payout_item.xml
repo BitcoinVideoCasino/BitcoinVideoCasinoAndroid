@@ -1,0 +1,84 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/payout_item"
+    android:layout_width="fill_parent"
+    android:layout_height="0px"
+    android:layout_weight="1"
+    android:layout_marginTop="0px"
+    android:layout_marginBottom="0px"
+    android:paddingTop="0px"
+    android:paddingBottom="0px"
+	android:orientation="horizontal" >
+	
+<TextView
+	android:id="@+id/name" 
+	style="@style/payout_text"
+    android:layout_weight="7"
+    android:layout_width="0dp"
+   	android:text="ROYAL FLUSH" />
+   	
+<View
+	android:id="@+id/border"
+	android:background="@color/vp_payout_border"
+	android:layout_width="2dp"
+	android:layout_height="fill_parent" />	
+   	
+<TextView
+	android:id="@+id/prize0" 
+	style="@style/payout_text"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:gravity="right"
+   	android:text="250" />
+   	
+<View
+	android:id="@+id/border"
+	android:background="@color/vp_payout_border"
+	android:layout_width="2dp"
+	android:layout_height="fill_parent" />	
+	
+<TextView
+	android:id="@+id/prize1" 
+	style="@style/payout_text"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:gravity="right"
+   	android:text="500" />
+<View
+	android:id="@+id/border"
+	android:background="@color/vp_payout_border"
+	android:layout_width="2dp"
+	android:layout_height="fill_parent" />	
+<TextView
+	android:id="@+id/prize2" 
+	style="@style/payout_text"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:gravity="right"
+   	android:text="750" />
+<View
+	android:id="@+id/border"
+	android:background="@color/vp_payout_border"
+	android:layout_width="2dp"
+	android:layout_height="fill_parent" />	
+<TextView
+	android:id="@+id/prize3" 
+	style="@style/payout_text"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:gravity="right"
+   	android:text="1000" />
+<View
+	android:id="@+id/border"
+	android:background="@color/vp_payout_border"
+	android:layout_width="2dp"
+	android:layout_height="fill_parent" />	
+<TextView
+	android:id="@+id/prize4" 
+	style="@style/payout_text"
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:gravity="right"
+   	android:text="4230.99" />
+
+</LinearLayout>

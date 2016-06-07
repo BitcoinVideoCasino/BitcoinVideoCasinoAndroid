@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">Bitcoin Video Casino</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Bitcoin Video Casino</string>
+
+    <string-array name="auto_strategy_array">
+        <item>Repeat same bet</item>
+        <item>Martingale</item>
+    </string-array>
+    <string-array name="auto_speed_array">
+        <item>Slow</item>
+        <item>Medium</item>
+        <item>Fast</item>
+    </string-array>
+    <string-array name="auto_target_array">
+        <item>High</item>
+        <item>Low</item>
+    </string-array>
+    <string-array name="vp_mode_array">
+        <item>Standard</item>
+        <item>Hold only</item>
+    </string-array>
+    <string-array name="vp_double_array">
+        <item>Never</item>
+        <item>Sometimes (50%)</item>
+        <item>Always</item>
+    </string-array>
+    
+    <string-array name="bj_insurance_array">
+        <item>Never</item>
+        <item>Sometimes</item>
+        <item>Always</item>
+    </string-array>
+</resources>

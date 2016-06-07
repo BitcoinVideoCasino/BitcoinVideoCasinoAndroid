@@ -1,0 +1,86 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bitcoinvideocasino"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+        
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
+        
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:debuggable="true"
+    	android:name=".lib.CommonApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="landscape" >
+        <activity
+            android:name=".app.IntroActivity"
+			android:screenOrientation="landscape"
+        	android:noHistory="true"
+            android:label="Bitcoin Video Casino" >
+        </activity>
+        <activity
+            android:name=".app.MainActivity"
+			android:screenOrientation="landscape"
+        	android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.SettingsActivity"
+			android:screenOrientation="landscape"
+            android:label="Settings" >
+        </activity>
+        <activity
+            android:name=".app.DepositActivity"
+			android:screenOrientation="landscape"
+        	android:theme="@style/AppTheme"
+            android:label="Deposit" >
+        </activity>
+        <activity
+            android:name=".app.BlackjackActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:label="Blackjack" >
+        </activity>
+        <activity
+            android:name=".app.SlotsActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:label="Slots" >
+        </activity>
+        <activity
+            android:name=".app.SlotsHelpActivity"
+			android:screenOrientation="landscape"
+        	android:theme="@style/AppTheme"
+            android:label="Slots Help" >
+        </activity>
+        <activity
+            android:name=".app.VideoPokerActivity"
+			android:screenOrientation="landscape"
+        	android:theme="@style/AppTheme"
+            android:label="VideoPoker" >
+        </activity>
+        <activity
+            android:name=".app.DiceActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:label="Dice" >
+        </activity>
+        <activity
+            android:name=".app.CashOutActivity"
+			android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"
+            android:label="Cash Out" >
+        </activity>
+    </application>
+
+</manifest>

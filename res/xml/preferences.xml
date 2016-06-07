@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="Bitcoin Video Casino Settings">
+	<PreferenceCategory
+	    android:title="Gameplay">
+	    
+	    <CheckBoxPreference
+	        android:key="sound_enable"
+	        android:title="Enable sound"
+	        android:summary="Sound is on"
+	        android:defaultValue="true" />
+	        
+	</PreferenceCategory>
+	<PreferenceCategory
+	    android:title="Your account">
+	    
+        <EditTextPreference
+            android:name="Your account key"
+            android:summary="ABCD1234"
+            android:title="Edit your account key"
+            android:key="account_key" /> 
+            
+		<Preference android:title="Import account key from QR code"
+            android:key="import_account" />
+                
+		<Preference android:title="Create new account key"
+            android:key="new_account" />
+            
+  	</PreferenceCategory>
+	<PreferenceCategory
+	    android:title="Other">
+	    
+		<Preference android:title="Visit bitcoinvideocasino.com">
+		    <intent android:action="android.intent.action.VIEW"
+	            android:data="https://www.bitcoinvideocasino.com" />
+	    </Preference>
+	    
+		<Preference android:title="View source code"
+            android:key="view_source_code"
+            android:summary="http://bitbucket.org/tbak/bitcoinvideocasino_android" />
+	    
+		<Preference android:title="Email us"
+            android:key="email_us"
+            android:summary="admin@bitcoinvideocasino.com" />
+            
+		<Preference android:title="Version"
+            android:key="version"
+            android:summary="..." />
+            
+  	</PreferenceCategory>
+	            
+</PreferenceScreen>

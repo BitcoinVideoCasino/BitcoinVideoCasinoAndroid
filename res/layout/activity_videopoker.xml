@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/container"
+    android:background="@drawable/videopoker_background"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_height="fill_parent"
+    tools:context=".VideoPokerActivity">
+    
+	<LinearLayout
+		android:id="@+id/contents"
+		android:layout_gravity="center"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+	    
+    	<FrameLayout
+    		android:id="@+id/payout_holder"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+    		android:layout_width="fill_parent"
+            android:layout_weight="270"
+    		android:layout_height="0dp" > 
+	    </FrameLayout>
+	    
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="350"
+            android:layout_height="0dp"
+            android:orientation="horizontal" >
+            
+            <include 
+                android:id="@+id/card_holder0" 
+                layout="@layout/vp_card_holder"
+                android:tag="0" />
+            <include 
+                android:id="@+id/card_holder1" 
+                layout="@layout/vp_card_holder"
+                android:tag="1" />
+            <include 
+                android:id="@+id/card_holder2" 
+                layout="@layout/vp_card_holder"
+                android:tag="2" />
+            <include 
+                android:id="@+id/card_holder3" 
+                layout="@layout/vp_card_holder"
+                android:tag="3" />
+            <include 
+                android:id="@+id/card_holder4" 
+                layout="@layout/vp_card_holder"
+                android:tag="4" />
+                
+        </LinearLayout>
+
+        <include 
+            android:id="@+id/win_bet_credits" 
+            layout="@layout/win_bet_credits" />
+    
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+            android:layout_weight="60"
+		    android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:splitMotionEvents="false"
+		    android:orientation="horizontal" >
+		    
+            <ImageButton  
+                android:id="@+id/auto_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+                android:onClick="onAuto"  
+                android:layout_gravity="left"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_auto" />
+                	
+            <ImageButton
+                android:id="@+id/paytables_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+                android:onClick="onPaytables"  
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_moregames" />
+                
+            <ImageButton  
+                android:id="@+id/btc_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+                android:onClick="onCreditBTC"  
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_btc_001" />
+			    
+			<ImageButton  
+			    android:id="@+id/double_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+			    android:onClick="onDouble"  
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_double" />
+			    
+            <ImageButton  
+                android:id="@+id/deal_button"  
+                android:layout_height="fill_parent"  
+                android:layout_weight="1"
+                android:layout_width="0dp"  
+			    android:onClick="onDeal"  
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="false"
+                android:background="@null"
+                android:src="@drawable/button_draw" />
+	        
+		</LinearLayout>
+	</LinearLayout>
+
+</FrameLayout>

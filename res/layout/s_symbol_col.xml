@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        tools:context=".SlotsActivity">
+
+    <LinearLayout
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+        <include
+                android:id="@+id/symbol_holder0"
+                layout="@layout/s_symbol_holder"
+                android:tag="0" />
+        <include
+                android:id="@+id/symbol_holder1"
+                layout="@layout/s_symbol_holder"
+                android:tag="0" />
+        <include
+                android:id="@+id/symbol_holder2"
+                layout="@layout/s_symbol_holder"
+                android:tag="0" />
+
+    </LinearLayout>
+
+    <!--
+    <SurfaceView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/spinning"/>
+    -->
+
+</FrameLayout>

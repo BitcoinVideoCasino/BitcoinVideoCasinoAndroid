@@ -1,0 +1,153 @@
+<resources>
+
+    <color name="vp_payout_border">#fcd800</color>
+    <color name="vp_payout_bg">#000064</color>
+    <color name="vp_payout_column_selected">#b00000</color>
+    <color name="vp_payout_text">#ffff00</color>
+    <color name="vp_bg">#111290</color>
+    
+    <color name="bj_bg">#005215</color>
+
+    <color name="s_bg">#035a8c</color>
+
+    <color name="d_bg">#4c1161</color>
+
+    <color name="edittext_disabled">#d0d0d0</color>
+
+    <style name="AppTheme" parent="android:Theme.NoTitleBar" />
+    
+ 	<style name="payout_text">
+		<item name="android:textSize">12px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingTop">0px</item>
+        <item name="android:paddingBottom">0px</item>
+        <item name="android:paddingRight">5px</item>
+        <item name="android:layout_marginTop">0px</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:layout_marginBottom">0px</item>
+        <item name="android:background">@color/vp_payout_bg</item>
+        <item name="android:textColor">@color/vp_payout_text</item>
+    </style>
+
+    <style name="d_input_row">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">120</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="d_input_label_container">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="d_input_label">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#dfd818</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="d_input_label_units">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#dfd818</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="d_input_edit">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="d_input_seekbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressDrawable">@drawable/progressbar</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:progress">20</item>
+        <item name="android:max">1000</item>
+    </style>
+
+    <style name="d_result_box">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/result_box</item>
+    </style>
+
+    <style name="d_lucky_number_digit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="d_error_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/error_box</item>
+    </style>
+
+    <style name="d_roll_button_label">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="d_roll_button_goal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <color name="light_gray_header_color">#646663</color>
+
+
+    
+</resources>

@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/container"
+    android:windowNoTitle="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    tools:context=".SlotsHelpActivity">
+
+    <de.marcreichelt.android.RealViewSwitcher
+            android:id="@+id/view_switcher"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <ImageView
+                android:id="@+id/page0"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="false"
+                android:src="@drawable/slt_help_howtoplay" />
+        <ImageView
+                android:id="@+id/page1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="false"
+                android:src="@drawable/slt_help_paytables1" />
+        <ImageView
+                android:id="@+id/page2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="false"
+                android:src="@drawable/slt_help_paytables2" />
+
+    </de.marcreichelt.android.RealViewSwitcher>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="(Swipe left/right to change help page)"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:textColor="#666666"
+            android:textStyle="italic"
+            android:textSize="16sp"/>
+
+</FrameLayout>
